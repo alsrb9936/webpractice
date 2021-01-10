@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>반응하는 태그들</title>
+	</head>
+	<body>
+		<h1>input 태그</h1>
+		아이디  <input type="text" name="userID" maxlength="12" /> 
+		비밀번호 <input type="password" name="userPw" maxlength="12" />
+		
+		<h2>체크박스</h2>
+		<b>취미</b><br/>
+		음악감상<input type="checkbox" name="myHobby" value="music" checked/><br/>
+		영화감상<input type="checkbox" name="myHobby" value="movie" checked/>
+		
+		<h2>라디오버튼</h2>
+		음악감상<input type="radio" name="myHobby" value="music" checked/><br/>
+		영화감상<input type="radio" name="myHobby" value="movie" checked/><br/>
+		수집<input type="radio" name="myHobby" value="movie" checked/>
+		
+		<h2>그냥버튼</h2>
+		<input type="button" value="약관을 보시려면 누르세요"/>
+		
+		<h2>파일 업로드</h2>
+		<input type="file" name="attachedFile">
+		
+		<h2>검색</h2>
+		<input type="search" name="search"/>
+		
+		<h2>리셋</h2>
+		<form name="signUp" method="post" action="signup.php">
+			아이디 <input tpye="text" name="userID" value="" />
+			<input type="reset" value="다시입력"/>
+		</form>
+		
+		<h2>전송</h2>
+		<form name="signUp" method="post" action="signup.php"> 
+			<input tpye="text" name="userID" value="myid" />
+			<input type="submit" value="완료"/>
+		</form>
+		
+		<h2>이외 타입들</h2>
+		<p>
+			type : email 타입 - 이메일 입력에 사용 @과 도메인이 있어야함<br/>
+			url 타입 : url 형식을 갖춰야함<br/>
+			number 타입 : 숫자만 입력가능 (스마트폰에서 키보드 숫자키패드가 나올려면 \d*사용)
+			<input type="number" pattern="\d*"/> <br/>
+			color 타입 : 색도 선택가능 <br />
+			range 타입 : 슬라이드 방식의 인터페이스. <br/>
+			<input type="range" min="0" max="100" value="50" step="10" /> <br/>
+			placeholder 타입: 입력창에 어떤내용을 입력해야하는지 쓸수있다.
+		</p>
+		
+	</body>
+</html>
