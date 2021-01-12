@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="./practice.css" rel="stylesheet" type="text/css">
+		<title>민규의 블로그</title>
+		
+		<script type="text/javascript">
+			function doSomething() {
+				let a = document.getElementById('inputA').value;
+				let b = document.getElementById('inputB').value;
+				document.getElementById("valueA").innerHTML = a;
+				document.getElementById("valueB").innerHTML = b;
+				document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">Home</a>
+			<a href="./blog_list.html">Blog</a>
+			<a href="./about_me.html">About me</a>
+		</nav>
+		
+		<h1>
+			BLOG
+		</h1>
+		
+		<label for="inputA">a</label>
+		<input id="inputA" value=1 onkeyup ="doSomething()">
+		<label for="inputB">b</label>
+		<input id="inputB" value=2 onkeyup ="doSomething()">
+		
+		<p>
+			<span id="valueA">1</span> + <span id="valueB">2</span> = <span id="valueC">3</span> 입니다.</p>
+		
+	</body>
+</html>
