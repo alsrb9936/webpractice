@@ -140,3 +140,4 @@ cython_debug/
 #ADD MY FILE
 .idea/
 migrations/
+_media/
