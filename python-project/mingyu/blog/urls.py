@@ -10,5 +10,6 @@ urlpatterns = [
     path('category/<str:slug>/', views.category_page),
     path('tag/<str:slug>/', views.tag_page),
     path('<int:pk>/new_comment/', views.new_comment),
+    path('delete_comment/<int:pk>/', views.delete_comment)
     
 ]
