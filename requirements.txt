@@ -36,3 +36,4 @@ ssh-import-id==5.7
 unattended-upgrades==0.1
 urllib3==1.22
 whitenoise==5.2.0
+python-apt==1.6.5+ubuntu0.5
