@@ -22,8 +22,9 @@ psycopg2==2.8.6
 pycparser==2.20
 pycrypto==2.6.1
 Pygments==2.8.1
-pygobject==3.27.1
+pygobject==3.26.1
 PyJWT==2.0.1
+python-apt==1.6.5+ubuntu0.5
 python3-openid==3.2.0
 pytz==2021.1
 pyxdg==0.25
@@ -36,4 +37,3 @@ ssh-import-id==5.7
 unattended-upgrades==0.1
 urllib3==1.22
 whitenoise==5.2.0
-python-apt==1.6.5+ubuntu0.5
